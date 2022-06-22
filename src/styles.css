@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+nav {
+  box-shadow: 5px 5px 3px #2c3e4c;
+}
+
+body{
+  background-image: linear-gradient(90deg, rgba(225, 244, 255, 0.9), rgba(234, 67, 56, 0.5)), url('film.png') ;
+  background-size: 100%;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.card {
+  position: relative;
+  z-index: 1000;
+}
+
+.card-body {
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  margin: 10px;
+  background-color: rgba(253, 229, 229, 0.02);
+  z-index: -1;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.text {
+  text-align: center;
+  color: #f8f8ff;
+  padding-top: 20px;
+  text-transform: capitalize;
+}

@@ -1,14 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+}
+
 body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 50px;
   background-color: #000;
+  background-image: url('fi3.gif');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+nav {
+  box-shadow: 5px 5px 3px #2c3e4c;
+  background-color: rgb(163, 6, 255);
+}
+
+h1 {
+  background: linear-gradient(to left, #3944bc, #1338be, #82eefd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.collection {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 23%;
+  margin: 10px;
+  background-color: rgba(253, 229, 229, 0.05);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.card-body {
+  width: 60%;
+  height: 350px;
+}
+
+.text {
+  text-align: center;
+  color: #f8f8ff;
+  padding-top: 20px;
+  text-transform: capitalize;
 }
 
 footer {
-  font-family: 'Nunito', sans-serif;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -17,5 +66,5 @@ footer {
   color: #fff;
   font-weight: 500;
   -webkit-text-stroke: 0.3px #8df4ff;
-  text-shadow: 0 0 10px #40c8de;
+  text-shadow: 0 0 10px #40c8de, 0 0 20px #40c8de, 0 0 30px #40c8de;
 }

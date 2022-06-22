@@ -1,13 +1,13 @@
 {
-  "name": "leader-board-project-using-api-s",
+  "name": "MediaHub",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ABDULALI3468/Leader-board-project-using-API-s.git"
+    "url": "git+https://github.com/Kamba56/MediaHub.git"
   },
   "bugs": {
-    "url": "https://github.com/ABDULALI3468/Leader-board-project-using-API-s/issues"
+    "url": "https://github.com/Kamba56/MediaHub/issues"
   },
-  "homepage": "https://github.com/ABDULALI3468/Leader-board-project-using-API-s#readme",
+  "homepage": "https://github.com/Kamba56/MediaHub#readme",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

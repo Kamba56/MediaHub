@@ -1,69 +1,64 @@
-<head><script defer src="main.js"></script></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve 'C:\Users\seyar\Documents\GitHub\MediaH  ub\src\index.html' in 'C:\Users\seyar\Documents\GitHub\MediaHub'
-  ModuleNotFoundError: Module not found: Error: Can't resolve 'C:\Users\seyar\Do  cuments\GitHub\MediaHub\src\index.html' in 'C:\Users\seyar\Documents\GitHub\Me  diaHub'
-      at C:\Users\seyar\Documents\GitHub\MediaHub\node_modules\webpack\lib\Compi  lation.js:2016:28
-      at C:\Users\seyar\Documents\GitHub\MediaHub\node_modules\webpack\lib\Norma  lModuleFactory.js:798:13
-      at eval (eval at create (C:\Users\seyar\Documents\GitHub\MediaHub\node_mod  ules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:10:1)
-      at C:\Users\seyar\Documents\GitHub\MediaHub\node_modules\webpack\lib\Norma  lModuleFactory.js:270:22
-      at eval (eval at create (C:\Users\seyar\Documents\GitHub\MediaHub\node_mod  ules\tapable\lib\HookCodeFactory.js:33:10), <anonymous>:9:1)
-      at C:\Users\seyar\Documents\GitHub\MediaHub\node_modules\webpack\lib\Norma  lModuleFactory.js:434:22
-      at C:\Users\seyar\Documents\GitHub\MediaHub\node_modules\webpack\lib\Norma  lModuleFactory.js:120:11
-      at C:\Users\seyar\Documents\GitHub\MediaHub\node_modules\webpack\lib\Norma  lModuleFactory.js:670:25
-      at C:\Users\seyar\Documents\GitHub\MediaHub\node_modules\webpack\lib\Norma  lModuleFactory.js:855:8
-      at C:\Users\seyar\Documents\GitHub\MediaHub\node_modules\webpack\lib\Norma  lModuleFactory.js:975:5
-  
-  - Compilation.js:2016 
-    [MediaHub]/[webpack]/lib/Compilation.js:2016:28
-  
-  - NormalModuleFactory.js:798 
-    [MediaHub]/[webpack]/lib/NormalModuleFactory.js:798:13
-  
-  
-  - NormalModuleFactory.js:270 
-    [MediaHub]/[webpack]/lib/NormalModuleFactory.js:270:22
-  
-  
-  - NormalModuleFactory.js:434 
-    [MediaHub]/[webpack]/lib/NormalModuleFactory.js:434:22
-  
-  - NormalModuleFactory.js:120 
-    [MediaHub]/[webpack]/lib/NormalModuleFactory.js:120:11
-  
-  - NormalModuleFactory.js:670 
-    [MediaHub]/[webpack]/lib/NormalModuleFactory.js:670:25
-  
-  - NormalModuleFactory.js:855 
-    [MediaHub]/[webpack]/lib/NormalModuleFactory.js:855:8
-  
-  - NormalModuleFactory.js:975 
-    [MediaHub]/[webpack]/lib/NormalModuleFactory.js:975:5
-  
-  - child-compiler.js:169 
-    [MediaHub]/[html-webpack-plugin]/lib/child-compiler.js:169:18
-  
-  - Compiler.js:551 finalCallback
-    [MediaHub]/[webpack]/lib/Compiler.js:551:5
-  
-  - Compiler.js:577 
-    [MediaHub]/[webpack]/lib/Compiler.js:577:11
-  
-  - Compiler.js:1196 
-    [MediaHub]/[webpack]/lib/Compiler.js:1196:17
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [MediaHub]/[tapable]/lib/Hook.js:18:14
-  
-  - Compiler.js:1192 
-    [MediaHub]/[webpack]/lib/Compiler.js:1192:33
-  
-  - Compilation.js:2787 finalCallback
-    [MediaHub]/[webpack]/lib/Compilation.js:2787:11
-  
-  - Compilation.js:3092 
-    [MediaHub]/[webpack]/lib/Compilation.js:3092:11
-  
-  
-</pre>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MovieHub</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" type="text/css" href="css/all.min.css">
+<script defer src="main.js"></script></head>
+<body>
+	<main>
+		<header>
+      <nav class="navbar navbar-expand-md navbar-dark col-md-12 col-lg-12 s">
+      <div class="navbar-brand"><i>
+        MediaHub</i>
+      </div>
+      <button type="submit" class=" navbar-toggler " data-toggle="collapse" data-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav offset-lg-6 offset-md-2 align-items-center">
+        <li class="nav-item ">
+          <a class="nav-link text-light" href="AI.html">Marvel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="about.html">Sci-Fi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#program">Action</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#speakers">Animation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#sponsors">Comedy</a>
+        </li>
+      </ul>
+      </div>
+    </nav>
+  </header>
+
+  <h1>MediaHub</h1>
+
+  <div class="collection">
+  <div class="card">
+        <div class="card-body">
+            <h2 class="text">Movie</h2>
+</div>
+</div>
+<div class="card">
+        <div class="card-body">
+            <h2 class="text">Movie</h2>
+</div>
+</div>
+</div>
+	</main>
+
+
+	<script type="module" src="index.js"></script>
+
+</body>
+</html>

@@ -12,9 +12,11 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 5rem;
-  background-image: radial-gradient(rgb(14, 0, 23), rgba(14, 0, 23, 0.2)), url('fi3.gif');
-  background-size: 100%;
+  background-color: rgb(14, 0, 23);
+  background-image: radial-gradient(rgba(14, 0, 23, 0.85), rgba(14, 0, 23, 0.85)), url('./images/bg-mobile.svg');
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 img {
@@ -30,11 +32,19 @@ nav {
 }
 
 h1 {
-  background: linear-gradient(to left, #3944bc, #1338be, #82eefd);
+  /* background: linear-gradient(to left, #3944bc, #1338be, #82eefd);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 70px;
+  -webkit-text-fill-color: transparent; */
+  font-size: 50px;
   font-weight: bold;
+  color: #ea7aff;
+  font-family: cursive;
+  text-align: center;
+  background: #ffffff10;
+}
+
+.color1 {
+  color: #40c8de;
 }
 
 .text {
@@ -57,7 +67,7 @@ footer {
 }
 
 /* ! List styling */
-#list-section {
+.my-container {
   width: 95%;
   margin: 0 auto;
   padding: 40px 10px;
@@ -79,7 +89,7 @@ footer {
 }
 
 .grid-item {
-  background-color: rgba(255, 104, 183, 0.1);
+  background-color: rgba(14, 0, 23, 0.8);
   box-shadow: 0 0 20px rgba(255, 104, 183, 0.8);
   backdrop-filter: blur(3px);
   border: 0.5px solid rgb(255, 104, 183);
@@ -89,10 +99,15 @@ footer {
   height: auto;
 }
 
+.grid-item:nth-child(even) {
+  box-shadow: 0 0 20px #8df4ff;
+  border: 0.5px solid #8df4ff;
+}
+
 .grid-item figure {
   width: 100%;
   min-height: 200px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   overflow: hidden;
   height: auto;
 }
@@ -113,12 +128,19 @@ footer {
   color: #fff;
 }
 
-@media only screen and (min-width:768px) {
-  h1 {
-    font-size: 150px;
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: linear-gradient(rgba(14, 0, 23, 0.9), rgba(14, 0, 23, 0.9)), url('./images/bg-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
-  #list-section {
+  h1 {
+    font-size: 70px;
+  }
+
+  .my-container {
     width: 80%;
     padding: 50px 20px;
   }

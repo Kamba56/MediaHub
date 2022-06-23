@@ -171,7 +171,7 @@ main {
   background: none;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   body {
     background-image: linear-gradient(rgba(14, 0, 23, 0.9), rgba(14, 0, 23, 0.9)), url('./images/bg-desktop.svg');
     background-position: center;
@@ -187,5 +187,4 @@ main {
     width: 80%;
     padding: 50px 20px;
   }
-
 }

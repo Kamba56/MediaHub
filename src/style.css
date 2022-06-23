@@ -121,6 +121,10 @@ footer {
   transition: color 1s 5ms;
 }
 
+.my-btn1 span {
+  color: #fff;
+}
+
 .btn:hover {
   color: #fff;
 }

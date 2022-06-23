@@ -1,5 +1,6 @@
 import popup from './pop-up.js';
 const list = document.querySelector('#list');
+const pop = document.querySelector('#pop-up');
 
 const populate = (movies) => {
   movies.forEach((movie, index) => {
@@ -21,17 +22,9 @@ const populate = (movies) => {
     </div>
   </div>
     `;
-
-    const comment = document.querySelectorAll('.my-btn');
-    comment.forEach(e => {e.addEventListener('click', () => {
-      
-    });
-    });
-    // popup(movie, comment);
     }
   });
-
-  
+  popup(movies);  
 };
 
 export default populate;

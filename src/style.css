@@ -32,9 +32,6 @@ nav {
 }
 
 h1 {
-  /* background: linear-gradient(to left, #3944bc, #1338be, #82eefd);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   font-size: 50px;
   font-weight: bold;
   color: #ea7aff;
@@ -126,6 +123,52 @@ footer {
 
 .btn:hover {
   color: #fff;
+}
+
+.popup-design {
+  background-color: rgba(14, 0, 23, 0.8);
+  box-shadow: 0 0 20px rgba(255, 104, 183, 0.8);
+  backdrop-filter: blur(3px);
+  border: 0.5px solid rgb(255, 104, 183);
+  border-radius: 10px;
+  color: #82eefd;
+  text-align: center;
+  height: auto;
+}
+
+main {
+  position: relative;
+}
+
+#pop-up {
+  padding: 10px 10%;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+  overscroll-behavior: contain;
+}
+
+.pop-img {
+  width: 80%;
+  margin: auto;
+}
+
+.popup-design:nth-child(even) {
+  box-shadow: 0 0 20px #8df4ff;
+  border: 0.5px solid #8df4ff;
+}
+
+.btnClose {
+  float: right;
+  margin-right: 4%;
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  background: none;
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,3 +1,5 @@
+import popup from './pop-up.js';
+
 const list = document.querySelector('#list');
 
 const populate = (movies) => {
@@ -13,7 +15,7 @@ const populate = (movies) => {
     <h2 class="movie-title">${movie.title}</h2>
 
     <div class="my-flex">
-      <button type="button" class="btn my-btn">Comments</button>
+      <button type="button" class="btn my-btn" id="${movie.imdbid}">Comments</button>
       <button type="button" class="btn my-btn1">
         <i class="bi bi-heart"></i>
       </button>
@@ -22,6 +24,7 @@ const populate = (movies) => {
     `;
     }
   });
+  popup(movies);
 };
 
 export default populate;

@@ -1,6 +1,6 @@
 import popup from './pop-up.js';
+
 const list = document.querySelector('#list');
-const pop = document.querySelector('#pop-up');
 
 const populate = (movies) => {
   movies.forEach((movie, index) => {
@@ -24,7 +24,7 @@ const populate = (movies) => {
     `;
     }
   });
-  popup(movies);  
+  popup(movies);
 };
 
 export default populate;

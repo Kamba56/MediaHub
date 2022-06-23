@@ -6,10 +6,9 @@ const popup = (movies) => {
     btn.addEventListener('click', () => {
       const btnID = btn.id;
       movies.forEach((movie) => {
-        if (movie.imdbid == btnID) {
+        if (movie.imdbid === btnID) {
           popUp.style.display = 'block';
-          popUp.innerHTML = 
-          `
+          popUp.innerHTML = `
           <div class="popup-design">
           <button class="btnClose">&times;</button>
           <div class="pop-img">
@@ -21,12 +20,12 @@ const popup = (movies) => {
           `;
         }
       });
-       const btnClose = document.querySelector('.btnClose');
-        btnClose.addEventListener('click', () =>{
-          popUp.style.display = 'none';
-        });
+      const btnClose = document.querySelector('.btnClose');
+      btnClose.addEventListener('click', () => {
+        popUp.style.display = 'none';
+      });
     });
   });
-}
+};
 
 export default popup;

@@ -1,3 +1,4 @@
+import countComment from './countComment.js';
 import postComment from './postComments.js';
 import showComment from './showComments.js';
 
@@ -11,6 +12,7 @@ const addComment = async (movie) => {
     showComment(movie);
     form.reset();
   });
+  countComment();
 };
 
 export default addComment;

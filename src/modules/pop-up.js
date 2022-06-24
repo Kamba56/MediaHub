@@ -19,7 +19,7 @@ const popup = async (movies) => {
           </div>
           <h2 class="title">${movie.title}</h2>
           <p class="discription">${movie.synopsis}</p>
-          <h3>Comments</h3>
+          <h3><span id="no-of-comments"></span> Comments</h3>
           <div class="text-light comments"></div>
           <form id="comment-form" class="my-container">
             <div class="form-group">

@@ -1,4 +1,5 @@
 import displayLikes from './displayLikes.js';
+import addLike from './addLikes.js';
 import popup from './pop-up.js';
 
 const list = document.querySelector('#list');
@@ -24,7 +25,7 @@ const populate = async (movies) => {
 
     <div class="my-flex">
       <button type="button" class="btn my-btn" id="${movie.imdbid}">Comments</button>
-      <button type="button" class="btn my-btn1">
+      <button type="button" class="btn my-btn1" id= "like${index}">
         <span>${noOfLikes}</span>
         <i class="bi bi-heart"></i>
       </button>
@@ -32,6 +33,26 @@ const populate = async (movies) => {
   </div>
     `;
     }
+  });
+
+  const likebtn = Array.from(document.querySelectorAll('.my-btn1'));
+
+  await likebtn.forEach(async (btn) => {
+    const btnID = btn.id;
+    await movies.forEach(async (elem, index) => {
+      const iD = `like${index}`;
+      if (btnID === iD) {
+        await btn.addEventListener('click', async () => {
+          addLike(elem.imdbid);
+          const likeArr = await displayLikes();
+          likeArr.forEach((like) => {
+            if (like.item_id === elem.imdbid) {
+              btn.querySelector('span').innerHTML = like.likes;
+            }
+          });
+        });
+      }
+    });
   });
   popup(movies);
 };

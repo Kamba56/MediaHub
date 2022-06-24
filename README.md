@@ -17,7 +17,7 @@ In this project, we developed an application that displays movies and allows use
 
 ## Live Demo ✔️
 
-[Live Demo Link](https://caasperr.github.io/MediaHUb/docs/)
+[Live Demo Link](https://kamba56.github.io/MediaHub/docs/)
 
 
 ## Getting Started 🙌

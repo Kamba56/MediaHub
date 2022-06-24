@@ -33,7 +33,7 @@ const popup = async (movies) => {
           </div>    
           `;
           await showComment(movie);
-          addComment(movie);
+          await addComment(movie);
           const btnClose = document.querySelector('.btnClose');
           btnClose.addEventListener('click', () => {
             popUp.style.display = 'none';

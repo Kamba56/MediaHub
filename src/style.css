@@ -175,6 +175,11 @@ main {
   background: none;
 }
 
+.comments * {
+  padding: 0;
+  margin: 5px auto;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     background-image: linear-gradient(rgba(14, 0, 23, 0.9), rgba(14, 0, 23, 0.9)), url('./images/bg-desktop.svg');

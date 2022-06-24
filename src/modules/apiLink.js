@@ -1,6 +1,8 @@
+import items from './itemCounter.js';
+
 const { default: populate } = require('./createList.js');
 
-const getList = () => {
+const getList = async () => {
   const options = {
     method: 'GET',
     headers: {
@@ -9,11 +11,12 @@ const getList = () => {
     },
   };
 
-  fetch('https://ott-details.p.rapidapi.com/advancedsearch?start_year=2018&end_year=2019&min_imdb=6&max_imdb=7.8&genre=action&language=english&type=movie&sort=latest&page=1', options)
+  await fetch('https://ott-details.p.rapidapi.com/advancedsearch?start_year=2018&end_year=2019&min_imdb=6&max_imdb=7.8&genre=action&language=english&type=movie&sort=latest&page=1', options)
     .then((response) => response.json())
 
-    .then((response) => {
-      populate(response.results);
+    .then(async (response) => {
+      await populate(response.results);
+      items();
     });
 };
 

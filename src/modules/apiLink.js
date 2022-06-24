@@ -4,7 +4,7 @@ const getList = () => {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '8521026ac3mshba4d66bef7a1a59p182b65jsn3f8d2248d96e',
+      'X-RapidAPI-Key': '88162f751fmsh22a6333f263db1ap10ffe9jsnefeb1699da94',
       'X-RapidAPI-Host': 'ott-details.p.rapidapi.com',
     },
   };

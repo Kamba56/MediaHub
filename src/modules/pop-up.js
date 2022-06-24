@@ -10,6 +10,11 @@ const popup = async (movies) => {
       const btnID = btn.id;
       await movies.forEach(async (movie) => {
         if (movie.imdbid === btnID) {
+          const comments = await displayComments(movie.imdbid);
+          const store = (comments === '') ? '' : comments.map((elem) => `<h4>${elem.username}</h4>
+            <p>${elem.comment}</p>
+            <p>${elem.creation_date}</p>
+            `).join('');
           popUp.style.display = 'block';
           popUp.innerHTML = `
           <div class="popup-design">

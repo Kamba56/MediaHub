@@ -8,7 +8,7 @@ const displayCommments = async (itemId) => {
         return response.json();
       }
       return Promise.reject(response);
-    })
+    });
     .catch(() => '');
   return data;
 };

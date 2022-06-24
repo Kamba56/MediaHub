@@ -1,4 +1,4 @@
-import countComment from '../countComment.js';
+import countComment from '../modules/countComment.js';
 
 test('Count number of comments', () => {
   document.body.innerHTML = `

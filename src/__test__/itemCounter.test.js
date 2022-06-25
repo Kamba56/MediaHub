@@ -1,5 +1,5 @@
 import items from '../modules/itemCounter.js';
-
+// Create A test in DOM
 test('this test must be 4', () => {
   document.body.innerHTML = `
 <p id="num"></p>

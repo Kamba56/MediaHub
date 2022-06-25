@@ -1,5 +1,4 @@
 import displayLikes from './displayLikes.js';
-import addLike from './addLikes.js';
 import popup from './pop-up.js';
 import like from './like.js';
 

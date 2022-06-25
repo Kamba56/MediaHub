@@ -1,6 +1,7 @@
 import displayLikes from './displayLikes.js';
 import addLike from './addLikes.js';
 import popup from './pop-up.js';
+import like from './like.js';
 
 const list = document.querySelector('#list');
 
@@ -35,25 +36,7 @@ const populate = async (movies) => {
     }
   });
 
-  const likebtn = Array.from(document.querySelectorAll('.my-btn1'));
-
-  await likebtn.forEach(async (btn) => {
-    const btnID = btn.id;
-    await movies.forEach(async (elem, index) => {
-      const iD = `like${index}`;
-      if (btnID === iD) {
-        await btn.addEventListener('click', async () => {
-          addLike(elem.imdbid);
-          const likeArr = await displayLikes();
-          likeArr.forEach((like) => {
-            if (like.item_id === elem.imdbid) {
-              btn.querySelector('span').innerHTML = like.likes;
-            }
-          });
-        });
-      }
-    });
-  });
+  await like(movies);
   popup(movies);
 };
 

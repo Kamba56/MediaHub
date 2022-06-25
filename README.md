@@ -19,6 +19,9 @@ In this project, we developed an application that displays movies and allows use
 
 [Live Demo Link](https://kamba56.github.io/MediaHub/docs/)
 
+## Video Of Project Functionality
+[Zoom Video] (https://drive.google.com/file/d/1mp1FsrC3XwB1hf4nTAAFsJDud6GxTWSH/view?usp=sharing)
+
 
 ## Getting Started 🙌
 

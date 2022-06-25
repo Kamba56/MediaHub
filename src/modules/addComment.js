@@ -9,7 +9,8 @@ const addComment = async (movie) => {
   await form.addEventListener('submit', async (e) => {
     e.preventDefault();
     await postComment(movie.imdbid, username.value, comment.value);
-    showComment(movie);
+    await showComment(movie);
+    countComment();
     form.reset();
   });
   countComment();

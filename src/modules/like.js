@@ -21,6 +21,6 @@ const like = async (movies) => {
       }
     });
   });
-}
+};
 
 export default like;
